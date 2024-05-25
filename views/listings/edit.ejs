@@ -79,7 +79,7 @@
             required
             name="listing[category]"
           >
-            <option value="<%=listing.category%>" selected disabled>
+            <option value="<%=listing.category%>" selected>
               <%=listing.category%>
             </option>
             <option value="castles">Castles</option>
@@ -99,6 +99,7 @@
             <option value="towers">Towers</option>
             <option value="camping">Camping</option>
           </select>
+          <div class="valid-feedback">Great</div>
         </div>
         <div class="mb-3 col-md-8">
           <label for="location" class="form-label">Location</label>

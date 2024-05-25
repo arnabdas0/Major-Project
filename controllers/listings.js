@@ -98,6 +98,7 @@ module.exports.search = async (req, res) => {
   const searchListings = await Listing.find({
     $or: [{ country: `${result}` }, { location: `${result}` }],
   });
+
   if (result == "") {
     req.flash("error", "Please enter a valid destination!");
     return res.redirect("/listings");
